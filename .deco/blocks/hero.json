@@ -1,1 +1,7 @@
-{"__resolveType":"site/sections/Hero.tsx"}
+{
+  "__resolveType": "site/sections/Hero.tsx",
+  "title": "<p>Qual é o título afinal deste site?</p>",
+  "placement": "left",
+  "cta": [],
+  "description": "Já editei em dois lugares"
+}
