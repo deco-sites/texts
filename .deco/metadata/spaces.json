@@ -25,6 +25,26 @@
       "name": "Pages",
       "pinned": true,
       "icon": "files",
+      "layout": [],
+      "tabs": {
+        "pages::List::list::List::%7B%7D": {
+          "name": "List",
+          "icon": "list",
+          "render": "function",
+          "viewId": "List",
+          "id": "pages::List::list::List::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "category": "Content"
+    },
+    {
+      "id": "sections",
+      "name": "Sections",
+      "pinned": true,
+      "icon": "block",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -71,12 +91,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "pages::List::list::List::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-pages::List::list::List::%7B%7D\" />",
+                    "id": "sections::List::list::List::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-sections::List::list::List::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "pages::List::list::List::%7B%7D"
+                      "id": "sections::List::list::List::%7B%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -92,26 +112,6 @@
         "openPopouts": [],
         "maximisedItemId": null
       },
-      "tabs": {
-        "pages::List::list::List::%7B%7D": {
-          "name": "List",
-          "icon": "list",
-          "render": "function",
-          "viewId": "List",
-          "id": "pages::List::list::List::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      },
-      "category": "Content"
-    },
-    {
-      "id": "sections",
-      "name": "Sections",
-      "pinned": true,
-      "icon": "block",
-      "layout": [],
       "tabs": {
         "sections::List::list::List::%7B%7D": {
           "name": "List",
@@ -171,7 +171,73 @@
       "name": "Releases",
       "pinned": true,
       "icon": "rocket",
-      "layout": [],
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 100,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "releases::releases::rocket::releases::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-releases::releases::rocket::releases::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "releases::releases::rocket::releases::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
       "tabs": {
         "releases::releases::rocket::releases::%7B%7D": {
           "name": "releases",
@@ -422,7 +488,94 @@
       "name": "Settings",
       "pinned": true,
       "icon": "adjustments-horizontal",
-      "layout": [],
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "settings::settings::adjustments-horizontal::settings::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-settings::settings::adjustments-horizontal::settings::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "settings::settings::adjustments-horizontal::settings::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "settings::domains::adjustments-horizontal::domains::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-settings::domains::adjustments-horizontal::domains::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "settings::domains::adjustments-horizontal::domains::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
       "tabs": {
         "settings::settings::adjustments-horizontal::settings::%7B%7D": {
           "name": "settings",
@@ -511,10 +664,10 @@
             "content": [
               {
                 "type": "stack",
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
-                "width": 33.333333333333336,
                 "activeItemIndex": 0,
                 "content": [
                   {
@@ -525,6 +678,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Properties::list::Properties::%7B%7D"
                     },
+                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -532,28 +686,7 @@
               },
               {
                 "type": "stack",
-                "width": 33.333333333333336,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Page%20SEO::world-search::Page%20SEO::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Page%20SEO::world-search::Page%20SEO::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Page%20SEO::world-search::Page%20SEO::%7B%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 33.33333333333333,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -567,6 +700,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Preview::world::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -588,22 +722,10 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Properties",
+          "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Page%20SEO::world-search::Page%20SEO::%7B%7D": {
-          "name": "Page SEO",
-          "icon": "world-search",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Page SEO",
-          "id": "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Page%20SEO::world-search::Page%20SEO::%7B%7D",
-          "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Preview::world::Preview::%7B%7D": {
@@ -612,6 +734,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
+          "width": 70,
           "id": "%2F.deco%2Fblocks%2Fpages-home-5afd25174424.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
@@ -1840,7 +1963,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 21.186440677966107,
+                "width": 15.236139090563771,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1862,7 +1985,7 @@
               },
               {
                 "type": "stack",
-                "width": 53.38983050847458,
+                "width": 65.90448334473108,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1884,19 +2007,19 @@
               },
               {
                 "type": "stack",
-                "width": 25.423728813559315,
+                "width": 18.85937756470514,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::AI%20Assistant::sparkle::AI%20Assistant::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::AI%20Assistant::sparkle::AI%20Assistant::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::Code::code::Code::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::Code::code::Code::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::AI%20Assistant::sparkle::AI%20Assistant::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::Code::code::Code::%7B%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -1922,8 +2045,7 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
           }
         },
         "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::Preview::world::Preview::%7B%7D": {
@@ -1938,13 +2060,13 @@
             "__signal": null
           }
         },
-        "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::AI%20Assistant::sparkle::AI%20Assistant::%7B%7D": {
-          "name": "AI Assistant",
-          "icon": "sparkle",
+        "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::Code::code::Code::%7B%7D": {
+          "name": "Code",
+          "icon": "code",
           "accepts": "function",
           "render": "function",
-          "viewId": "AI Assistant",
-          "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::AI%20Assistant::sparkle::AI%20Assistant::%7B%7D",
+          "viewId": "Code",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FHero.tsx.json::Code::code::Code::%7B%7D",
           "state": {
             "__signal": null
           }
@@ -2196,6 +2318,176 @@
           "viewId": "Preview",
           "width": 70,
           "id": "%2F.deco%2Fblocks%2Fpages-My%252520New%252520Page-90910.json::Preview::world::Preview::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "{\"oid\":\"7b90ac6dd562ce2b813a31edbb360f778caf06d6\",\"short\":\"7b90ac6\",\"commit\":{\"message\":\"Release staging environment with 1 changes made by Matheus Damião\\n\",\"parent\":[\"e4d1e9a434f4608c40f1707abfafb7ff57920001\"],\"tree\":\"388ba3599670e90f2e730ec13fe310fc1a2db041\",\"author\":{\"name\":\"Matheus Damião\",\"email\":\"matheus.damiaoliveira@gmail.com\",\"timestamp\":1718851265,\"timezoneOffset\":0},\"committer\":{\"name\":\"Matheus Damião\",\"email\":\"matheus.damiaoliveira@gmail.com\",\"timestamp\":1718851265,\"timezoneOffset\":0}}}",
+      "name": "Release 7b90ac6",
+      "pinned": false,
+      "icon": "rocket",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 100,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%7B%22oid%22%3A%227b90ac6dd562ce2b813a31edbb360f778caf06d6%22%2C%22short%22%3A%227b90ac6%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%201%20changes%20made%20by%20Matheus%20Dami%C3%A3o%5Cn%22%2C%22parent%22%3A%5B%22e4d1e9a434f4608c40f1707abfafb7ff57920001%22%5D%2C%22tree%22%3A%22388ba3599670e90f2e730ec13fe310fc1a2db041%22%2C%22author%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%7B%22oid%22%3A%227b90ac6dd562ce2b813a31edbb360f778caf06d6%22%2C%22short%22%3A%227b90ac6%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%201%20changes%20made%20by%20Matheus%20Dami%C3%A3o%5Cn%22%2C%22parent%22%3A%5B%22e4d1e9a434f4608c40f1707abfafb7ff57920001%22%5D%2C%22tree%22%3A%22388ba3599670e90f2e730ec13fe310fc1a2db041%22%2C%22author%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%7B%22oid%22%3A%227b90ac6dd562ce2b813a31edbb360f778caf06d6%22%2C%22short%22%3A%227b90ac6%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%201%20changes%20made%20by%20Matheus%20Dami%C3%A3o%5Cn%22%2C%22parent%22%3A%5B%22e4d1e9a434f4608c40f1707abfafb7ff57920001%22%5D%2C%22tree%22%3A%22388ba3599670e90f2e730ec13fe310fc1a2db041%22%2C%22author%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "%7B%22oid%22%3A%227b90ac6dd562ce2b813a31edbb360f778caf06d6%22%2C%22short%22%3A%227b90ac6%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%201%20changes%20made%20by%20Matheus%20Dami%C3%A3o%5Cn%22%2C%22parent%22%3A%5B%22e4d1e9a434f4608c40f1707abfafb7ff57920001%22%5D%2C%22tree%22%3A%22388ba3599670e90f2e730ec13fe310fc1a2db041%22%2C%22author%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D": {
+          "name": "Release",
+          "icon": "rocket",
+          "render": "function",
+          "viewId": "Release",
+          "id": "%7B%22oid%22%3A%227b90ac6dd562ce2b813a31edbb360f778caf06d6%22%2C%22short%22%3A%227b90ac6%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%201%20changes%20made%20by%20Matheus%20Dami%C3%A3o%5Cn%22%2C%22parent%22%3A%5B%22e4d1e9a434f4608c40f1707abfafb7ff57920001%22%5D%2C%22tree%22%3A%22388ba3599670e90f2e730ec13fe310fc1a2db041%22%2C%22author%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Matheus%20Dami%C3%A3o%22%2C%22email%22%3A%22matheus.damiaoliveira%40gmail.com%22%2C%22timestamp%22%3A1718851265%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "build-log-7b90ac6dd562ce2b813a31edbb360f778caf06d6",
+      "name": "Build Log 7b90ac6",
+      "pinned": false,
+      "icon": "news",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 100,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "build-log-7b90ac6dd562ce2b813a31edbb360f778caf06d6::Build%20Logs::news::Build%20Logs::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-build-log-7b90ac6dd562ce2b813a31edbb360f778caf06d6::Build%20Logs::news::Build%20Logs::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "build-log-7b90ac6dd562ce2b813a31edbb360f778caf06d6::Build%20Logs::news::Build%20Logs::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "build-log-7b90ac6dd562ce2b813a31edbb360f778caf06d6::Build%20Logs::news::Build%20Logs::%7B%7D": {
+          "name": "Build Logs",
+          "icon": "news",
+          "render": "function",
+          "viewId": "Build Logs",
+          "id": "build-log-7b90ac6dd562ce2b813a31edbb360f778caf06d6::Build%20Logs::news::Build%20Logs::%7B%7D",
           "state": {
             "__signal": null
           }
